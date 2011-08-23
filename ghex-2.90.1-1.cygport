@@ -1,0 +1,10 @@
+inherit gnome2
+
+DESCRIPTION="GNOME hex editor"
+
+PKG_NAMES="${PN} libgtkhex3_0 libgtkhex3-devel"
+ghex_CONTENTS="etc/ usr/bin/ghex.exe usr/share/"
+libgtkhex3_0_CONTENTS="usr/bin/cyggtkhex-3-0.dll"
+libgtkhex3_devel_CONTENTS="usr/include/ usr/lib/"
+
+MAKEOPTS+=" LDFLAGS=-no-undefined"

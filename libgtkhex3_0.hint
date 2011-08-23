@@ -1,0 +1,6 @@
+category: Gnome
+requires: libatk1.0_0 libcairo2 libgailutil3_0 libglib2.0_0 libgtk3_0 libintl8 libpango1.0_0
+external-source: ghex
+sdesc: "GTK+ hex editor library (runtime)"
+ldesc: "GHex allows the user to load data from any file,
+view and edit it in either hex or ascii."
