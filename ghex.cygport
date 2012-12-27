@@ -1,0 +1,18 @@
+inherit gnome2
+
+NAME="ghex"
+VERSION=3.6.1
+RELEASE=1
+CATEGORY="GNOME Editors"
+SUMMARY="GNOME hex editor"
+DESCRIPTION="GHex allows the user to load data from any file,
+view and edit it in either hex or ascii."
+
+PKG_NAMES="${PN} libgtkhex3_0 libgtkhex3-devel"
+ghex_CONTENTS="etc/ usr/bin/ghex.exe usr/share/"
+libgtkhex3_0_SUMMARY="${SUMMARY} library (runtime)"
+libgtkhex3_0_CONTENTS="usr/bin/cyggtkhex-3-0.dll"
+libgtkhex3_devel_SUMMARY="${SUMMARY} library (development)"
+libgtkhex3_devel_CONTENTS="usr/include/ usr/lib/"
+
+MAKEOPTS+=" LDFLAGS=-no-undefined"

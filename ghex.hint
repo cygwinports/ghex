@@ -1,5 +1,0 @@
-category: Gnome Editors
-requires: libatk1.0 libcairo2 libglib2.0_0 libgtk3_0 libgtkhex3_0 libintl8 libpango1.0_0
-sdesc: "GNOME hex editor"
-ldesc: "GHex allows the user to load data from any file,
-view and edit it in either hex or ascii."
